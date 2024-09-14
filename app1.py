@@ -23,7 +23,7 @@ def preprocess_image(img: Image.Image):
 
 st.title('Image Classification App')
 
-uploaded_files = st.file_uploader("Choose images", type=['jpg', 'png'], accept_multiple_files=True)
+uploaded_files = st.file_uploader("Upload your favourite Sea animal image", type=['jpg', 'png'], accept_multiple_files=True)
 
 if uploaded_files:
     results = []
