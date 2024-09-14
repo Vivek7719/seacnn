@@ -57,3 +57,10 @@ if uploaded_files:
             st.write(f"Predicted Class: {result['predicted_class']}")
             st.write(f"Confidence: {result['confidence']:.2f}")
 
+st.write("")
+st.write("")
+st.write("")
+st.markdown(
+    "[View this project on GitHub](https://github.com/viVeK21111/seacnn)",
+    unsafe_allow_html=True
+)
