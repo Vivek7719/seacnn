@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="file"] {
+            margin: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Upload Your favorite Sea animal for Classification</h1>
+
+<form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
+    <input type="file" name="files" multiple accept="image/*">
+    <br><br>
+    <input type="submit" value="Upload and Classify">
+</form>
+
+</body>
+</html>
