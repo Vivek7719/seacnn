@@ -64,3 +64,5 @@ st.markdown(
     "[View this project on GitHub](https://github.com/viVeK21111/seacnn)",
     unsafe_allow_html=True
 )
+st.write("")
+st.write("""Note: This model can only predict 23 classes which contain:\nClams,Corals,Crabs,Dolphin,Eel,Fish,Jelly,Lobster,Nudibranchs,Octopus,Otter,Penguin,Puffers,Sea_Rays,Sea_Urchins,Seahorse,Seal,Sharks,Shrimps,Squid,Starfish,Turtle,Whale""")
