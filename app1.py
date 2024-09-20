@@ -40,20 +40,21 @@ if uploaded_files:
             results.append({
                 'filename': uploaded_file.name,
                 'predicted_class': class_labels[predicted_class],
-                'confidence':confidence
+                'confidence':confidence,
+                'img': uploaded_file
             })
             
         except Exception as e:
             results.append({
                 'filename': uploaded_file.name,
-                'error': str(e)
+                'error': str(e),
             })
     
     for result in results:
-        st.write(f"Filename: {result['filename']}")
         if 'error' in result:
             st.write(f"Error: {result['error']}")
         else:
+            st.image(result['img'], caption=result['filename'])
             st.write(f"Predicted Class: {result['predicted_class']}")
             st.write(f"Confidence: {result['confidence']:.2f}")
 
